@@ -1,0 +1,15 @@
+{
+  "name": "morphic-fetcher",
+  "version": "0.0.1",
+  "description": "Isomorphic fetcher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Peter Marton, @slashdotpeter",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.1.0",
+    "superagent": "^0.20.0"
+  }
+}

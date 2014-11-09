@@ -1,9 +1,10 @@
 {
-  "name": "morphic-fetcher-koa-example",
+  "name": "morphic-fetcher-example-simple-koa",
   "version": "1.0.0",
-  "description": "",
+  "description": "Isomorphic example for morphic fetcher",
   "main": "app.js",
   "scripts": {
+    "start": "webpack --entry ./app --output-file static/bundle.js; node --harmony server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Peter Marton, @slashdotpeter",
@@ -13,7 +14,8 @@
     "koa": "^0.13.0",
     "koa-qs": "^1.0.1",
     "koa-router": "^3.6.0",
+    "koa-static": "^1.4.7",
     "qs": "^2.3.2",
-    "superagent": "^0.20.0"
+    "webpack": "^1.4.13"
   }
 }

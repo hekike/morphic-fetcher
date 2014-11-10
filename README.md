@@ -13,7 +13,7 @@ Isomorphic fetcher which works on both client and server side
 
 Check the **example/simple-koa/** directory and run with `npm start` after the `npm install`.
 
-```
+```javascript
 var Fetcher = require('morphic-fetcher');
 
 var readUser = new Fetcher({
@@ -42,8 +42,10 @@ var readUser = new Fetcher({
 More framework is coming soon.
 
 ### Koa
-```
+```javascript
 // Trigger "request"
-var fetcher = new Fetcher({ ... });
-app.callback()(fetcher.req, fetcher.res);
+var readUser = new Fetcher({ ... }, function (res) { 
+  console.log(res.status, res.body); 
+};
+app.callback()(readUser.req, readUser.res);
 ```

@@ -39,13 +39,36 @@ var readUser = new Fetcher({
 ```
 
 ## Server side
-More framework is coming soon.
+More frameworks are coming soon.
 
 ### Koa
 ```javascript
-// Trigger "request"
 var readUser = new Fetcher({ ... }, function (res) { 
   console.log(res.status, res.body); 
 };
+
+// Trigger http "request"
 app.callback()(readUser.req, readUser.res);
 ```
+
+### Express
+
+**// TODO** 
+
+I'm not sure yet, how to do this.  
+Because express exposes node's `req` and `res` objects, instead of it's own.
+
+It should start with:
+```javascript
+var readUser = new Fetcher({ ... }, function (res) { 
+  console.log(res.status, res.body); 
+};
+
+// Trigger http "request"
+app.handle(readUser.req, readUser.res, function (err) { ... };
+```
+
+More about this:
+https://github.com/koajs/koa/blob/master/docs/koa-vs-express.md
+
+

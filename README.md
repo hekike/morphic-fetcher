@@ -5,6 +5,24 @@ Isomorphic fetcher which works on both client and server side
 
 * **client:** Makes AJAX request with [Superagent](https://github.com/visionmedia/superagent)
 * **server:** Simulates [http.ClientRequest](http://nodejs.org/api/http.html#http_class_http_clientrequest) and [http.ServerResponse](http://nodejs.org/api/http.html#http_class_http_serverresponse) class, to trigger the original router and return with the data
+ 
+# Usage
+
+See examples below.
+
+## res
+
+Like in superagent.
+
+```javascript
+res.ok
+res.text
+res.body
+res.status
+...
+```
+
+http://visionmedia.github.io/superagent/#response-properties
 
 
 # Examples

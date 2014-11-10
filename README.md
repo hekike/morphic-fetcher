@@ -10,7 +10,7 @@ Isomorphic fetcher which works on both client and server side
 
 See examples below.
 
-## res
+## res object
 
 Like in superagent.
 

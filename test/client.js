@@ -4,7 +4,7 @@ var nock = require('nock');
 var fetcher = require('./fetcher');
 
 test('client side', function (t) {
-  nock('https://api.twitter.com:443')
+  nock('https://api.twitter.com')
   .post('/1.1/search/tweets.json?q=node', {'foo':'bar','bar':[1,2,3]})
   .once()
   .reply(200, { foo: 'bar' });
@@ -14,8 +14,8 @@ test('client side', function (t) {
   global.document = true;
 
   fetcher({}, function (res) {
-      t.equal(res.status, 200);
-      t.deepEqual(res.headers, { 'content-type': 'application/json' }, 'header should be set');
+      t.equal(res.status, 200, 'status should be 200');
+      t.equal(res.headers['content-type'], 'application/json', 'header should be set');
       t.equal(res.text, '{"foo":"bar"}', 'text should be equal');
       t.deepEqual(res.body, { foo: 'bar' }, 'body should be equal');
 

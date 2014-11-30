@@ -3,7 +3,7 @@ var Fetcher = require('../');
 function readUserFetcher (server, cb) {
   var read = new Fetcher(server, {
     method: 'post',
-    host: 'https://api.twitter.com:443',
+    host: 'https://api.twitter.com',
     url: '/:version/search/tweets.json',
     param: {
       version: '1.1'

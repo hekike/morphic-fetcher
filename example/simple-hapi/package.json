@@ -1,5 +1,5 @@
 {
-  "name": "morphic-fetcher-example-simple-express",
+  "name": "morphic-fetcher-example-simple-hapi",
   "version": "1.0.0",
   "description": "Isomorphic example for morphic fetcher",
   "main": "app.js",
@@ -10,8 +10,7 @@
   "author": "Peter Marton, @slashdotpeter",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.9.3",
-    "express": "^4.10.4",
+    "hapi": "^7.5.2",
     "webpack": "^1.4.13"
   }
 }

@@ -8,12 +8,12 @@ Isomorphic fetcher which works on both client and server side
 
 ## Common / client
 
-Check the **example/simple-koa/** directory and run with `npm start` after the `npm install`.
+Check the **example/simple-hapi/** directory and run with `npm start` after the `npm install`.
 
 ```
 var Fetcher = require('morphic-fetcher');
 
-var readUser = new Fetcher({
+var readUser = new Fetcher(server, {
   method: 'POST',
   host: 'http://localhost:3000',
   url: '/users/:user',
@@ -38,9 +38,12 @@ var readUser = new Fetcher({
 ## Server side
 More framework is coming soon.
 
-### Koa
+### Hapi
 ```
-// Trigger "request"
-var fetcher = new Fetcher({ ... });
-app.callback()(fetcher.req, fetcher.res);
+var Hapi = require('hapi');
+var server = new Hapi.Server();
+
+var readUser = new Fetcher(server, { .. }, function (res) {
+  ..
+});
 ```

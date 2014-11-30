@@ -1,7 +1,9 @@
 morphic-fetcher
 ===============
 
-Isomorphic fetcher which works on both client and server side
+Isomorphic fetcher which works on both client and server side  
+
+[![Build Status](https://travis-ci.org/hekike/morphic-fetcher.svg?branch=master)](https://travis-ci.org/hekike/morphic-fetcher)
 
 
 # Examples

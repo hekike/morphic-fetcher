@@ -1,6 +1,6 @@
 {
   "name": "morphic-fetcher",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Isomorphic fetcher",
   "main": "index.js",
   "scripts": {

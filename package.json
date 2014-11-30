@@ -9,8 +9,8 @@
   "author": "Peter Marton, @slashdotpeter",
   "license": "MIT",
   "dependencies": {
-    "debug": "^2.1.0",
     "rising-url": "^1.0.3",
+    "shot": "^1.4.0",
     "superagent": "^0.20.0"
   }
 }

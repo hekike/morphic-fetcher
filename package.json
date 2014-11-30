@@ -4,7 +4,8 @@
   "description": "Isomorphic fetcher",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/* | tap-spec",
+    "coverage": "covert test/* | tap-spec"
   },
   "author": "Peter Marton, @slashdotpeter",
   "license": "MIT",
@@ -12,5 +13,11 @@
     "rising-url": "^1.0.3",
     "shot": "^1.4.0",
     "superagent": "^0.20.0"
+  },
+  "devDependencies": {
+    "covert": "^1.0.1",
+    "nock": "^0.51.0",
+    "tap-spec": "^2.1.0",
+    "tape": "^3.0.3"
   }
 }

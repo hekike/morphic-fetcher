@@ -32,7 +32,7 @@ var readUser = new Fetcher(server, {
     foo: 'bar',
     bar: [1,2,3]
   }
-}, function(res) {}
+}, function(res) {
   console.log(res.status, res.body);
 });
 ```
